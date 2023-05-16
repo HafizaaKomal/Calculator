@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table class="table">
+        <div class="display">
+            <input id="screen" type="text" placeholder="0">
+        </div>
+        <tr class="btns">
+            <tr class="row" >
+                <td>  <button id="ce" onclick="backspc()">CE</button></td> 
+                <td><button class="btn" onclick="fact()">x!</button></td>
+                <td><button class="btn">(</button></td>
+                <td><button class="btn">)</button></td>
+                <td><button class="btn">%</button></td>
+                <td><button id="ac" onclick="screen.value=''">AC</button></td>
+            </tr>
+
+            <tr class="row">
+                <td><button class="btn" onclick="sin()">sin</button></td>
+                <td><button class="btn" onclick="pi()">π</button></td>
+                <td><button class="btn">7</button></td>
+                <td><button class="btn">8</button></td>
+                <td><button class="btn">9</button></td>
+                <td><button class="btn">÷</button></td>
+            </tr>
+
+            <tr class="row">
+                <td><button class="btn" onclick="cos()">cos</button></td>
+                <td><button class="btn" onclick="log()">log</button></td>
+                <td><button class="btn">4</button></td>
+                <td><button class="btn">5</button></td>
+                <td><button class="btn">6</button></td>
+                <td><button class="btn">*</button></td>
+            </tr>
+
+            <tr class="row">
+                <td><button class="btn" onclick="tan()">tan</button></td>
+                <td><button class="btn" onclick="sqrt()">√</button></td>
+                <td><button class="btn">1</button></td>
+                <td><button class="btn">2</button></td>
+                <td><button class="btn">3</button></td>
+                <td><button class="btn">-</button></td>
+            </tr>
+
+            <tr class="row">
+                <td><button class="btn" onclick="e()">e</button></td>
+                <td><button class="btn" onclick="pow()">x <span style="position: relative; bottom: .4em; right: .1em;">y</span> </button></td>
+                <td><button class="btn">0</button></td>
+                <td><button class="btn">.</button></td>
+                <td><button id="eval" onclick="screen.value=eval(screen.value)">=</button></td>
+                <td><button class="btn">+</button></td>
+            </tr>
+        </tr>
+        
+    
+    </table>
+    <script src="./SCRIPTS/app.js"></script>
+</body>
+</html>
